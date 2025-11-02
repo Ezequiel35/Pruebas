@@ -300,6 +300,25 @@ Tenemos:
     -(max-width: 768px): Cuando el ancho maximo de la pantalla es de esos pixeles o menos, cambiar a tal cosa.
     -Screen: solo para cuando es pantalla la visualizacion.
 
+**Grid:** Diseño de elementos para que sean flexibles, pero en grid, se pueden elegir ambas direcciones, es decir columnas y filas, que es la diferencia con flex. Es recomendable cuando se usan grillas o tipos de diseños con ambas direcciones.
+En grid-template-columns y grid-template-rows: se puede usar la expresion de repeat(agregar cantidad de columnas y valor de ancho) de esta manera no hay que escribir varias veces el mismo valor de cada columna y despues se puede poner valor de random a otra columna por fuera del parentesis.
+Otra expresion es minmax(agregar valor minimo y valor maximo) con esto lo que hace es que minimi se achica a tanto y maximo se agranda a tanto.
+
+    -Grid Explicito: Seria lo que definimos en css, pero no eh html, es decir el codigo no esta, pero si el espacio en la web, por el estilo dado
+    -Grid Implicito: Seria al revez, definido en html y no en css, por ende el grid lo agrega igual pero sin un valor definido (sea alto o ancho).
+
+    Para ajustar esto del implicito se puede usar grid-auto-rows, que genera que el alto de todass las filas.
+
+    Para sepracion entre cada item, lo ideal es usar gap, para que todos tengan la misma separacion entre el borde.
+
+    Para la expresion de repeat, se puede usar tambien la funcion de auto-fit, esto lo que hace es rellenar la grilla si le alcanza el espacio.
+
+    Para realizar que un item ocupe varios lugares, es decir generar un area de grid, se puede hacer teniendo en cuenta las lineas de comiendo, sepracion y final, tanto verticales como horizontales.
+    En codigo seria eligiendo un elemento y marcandole su column-start, su row-start, su column-end y row-end.
+    Para column-end y row-end se puede usar span para que si necesitamos moverla de lugar dentro de la grilla, solo sea ajustando el start.
+    
+    Ahora la forma mas facil de abreviar todo esto es solo con grid-column y grid-row.
+
 
 
 
