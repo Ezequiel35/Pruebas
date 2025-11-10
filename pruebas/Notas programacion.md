@@ -244,6 +244,11 @@ Cuando vayamos a css, solo debemos agregar todas las propiedades a la clase de l
 Se puede configurar con javascript esa parte o sino con el elemento "dialog" que si luego la usamos en un form con el method=dialog, funciona para que se pueda cerrar.
 
 **Transiciones:** Se usa idealmente directo en la caja del elemento, no en el hover. Ademas hay 3 propiedades, el nombre de lo que se va a cambiar, la duracion y el delay, o sea despues de cuanto tiempo va a empezar.
+Una opción es agregar steps en las transiciones de esa forma el proceso se genera en pasos y se puede elegir en cuantos pasos hacerlo.
+
+**Animacion:** Cambiar el estado de un elemento en el tiempo. Se pueden ejecutar cuando se quiera o incluso de forma automatica. Se pueden cambiar mas veces las propiedades y ademas se puede reproducir muchas veces.
+Se usa con @keyframes "nombre" y dentro de agrega el from donde estarian las propiedades de cuando inicia y despues el to que son las propiedades cuando termina la animacion.
+Se puede dejar el estado final de forma permanente con la propiedad animation-fillmode.
 
 **Overflow:** Se define como se maneja el contenido si sobresale de su contenedor. Tien 4 valores:
     -visible: se va a ver a pesar de salir del contenido.
