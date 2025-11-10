@@ -248,68 +248,90 @@ button {
   }
 }
 
+/*ANIMACION NEON DE BOTON*/
+
+.contboton{
+  position: relative;
+  background-color: black;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
+
 button{
   position: absolute;
-  height: 100px;
   margin: 40px;
   padding: 20px;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 24px;  
+  background-color: rgb(119, 119, 119);
+  color: rgb(54, 54, 54);
+  border: rgb(54, 54, 54) 5px solid;
+  box-shadow: none
+}
+
+button:hover{
   animation: boton;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 }
 
-
 @keyframes boton {
   0%{
     background-color: rgb(119, 119, 119);
-    color: rgb(4, 47, 65);
-    border: rgb(22, 227, 241) 5px solid;
-    box-shadow: 0px 0px 10px rgb(22, 227, 241);
+    color: rgb(54, 54, 54);
+    border: rgb(54, 54, 54) 5px solid;
+    bbox-shadow: none
   }
 
-  25%{
+  15%{
     background-color: rgb(119, 119, 119);
-    box-shadow: 0px 0px 10px rgb(31, 192, 255);
+    box-shadow: 0px 0px 30px rgb(31, 192, 255);
     border: rgb(31, 192, 255) 5px solid;
-    color: rgb(4, 47, 65);
+    color: rgb(31, 192, 255);
   }
 
-  35%{
+  30%{
     background-color: rgb(119, 119, 119);
-    color: rgb(4, 47, 65);
-    border: rgb(22, 227, 241) 5px solid;
-    box-shadow: 0px 0px 10px rgb(22, 227, 241);
+    color: rgb(54, 54, 54);
+    border: rgb(54, 54, 54) 5px solid;
+    box-shadow: none
   }
 
-  50%{
+  45%{
     background-color: rgb(119, 119, 119);
-    box-shadow: 0px 0px 10px rgb(86, 176, 211);
+    box-shadow: 0px 0px 30px rgb(86, 176, 211);
     border: rgba(86, 176, 211) 5px solid;
-    color: rgb(3, 33, 44);
+    color: rgb(31, 192, 255);
   }
 
   60%{
     background-color: rgb(119, 119, 119);
-    color: rgb(4, 47, 65);
-    border: rgb(22, 227, 241) 5px solid;
-    box-shadow: 0px 0px 10px rgb(22, 227, 241);
+    color: rgb(54, 54, 54);
+    border: rgb(54, 54, 54) 5px solid;
+    box-shadow: none
   }
 
   75%{
     background-color: rgb(119, 119, 119);
-    box-shadow: 0px 0px 10px rgb(31, 192, 255);
+    box-shadow: 0px 0px 30px rgb(31, 192, 255);
     border: rgb(31, 192, 255) 5px solid;
-    color: rgb(1, 67, 94);
+    color: rgb(31, 192, 255);
+  }
+
+  90%{
+    background-color: rgb(119, 119, 119);
+    color: rgb(54, 54, 54);
+    border: rgb(54, 54, 54) 5px solid;
+    box-shadow: none
   }
 
   100%{
     background-color: rgb(119, 119, 119);
-    color: rgb(4, 47, 65);
-    border: rgb(22, 227, 241) 5px solid;
-    box-shadow: 0px 0px 10px rgb(22, 227, 241);
+    box-shadow: 0px 0px 30px rgb(31, 192, 255);
+    border: rgb(31, 192, 255) 5px solid;
+    color: rgb(31, 192, 255);
   }
 }
 
