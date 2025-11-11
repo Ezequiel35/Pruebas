@@ -1,4 +1,4 @@
-# **Programación data:**
+# **PROGRAMACION DATA:**
 
 **ABM:** Se refiere a las operaciones básicas de gestión de datos en una base de datos: alta (crear un nuevo registro), baja (eliminar un registro) y modificación (actualizar un registro).Programación de software entero que desde el frontend se envíe datos hacia un backend, donde se impacte y se guarde en una base de datos.
 
@@ -11,6 +11,14 @@
 **API:** Es un conjunto de reglas y especificaciones que permiten que diferentes aplicaciones de software se comuniquen e interactúen entre sí. Actúa como un intermediario, permitiendo que una aplicación acceda a funcionalidades o datos de otra sin necesidad de conocer los detalles internos de su funcionamiento.
 
 **JavaScript:** se utiliza principalmente para crear contenido dinámico e interactivo en páginas web, mejorando la experiencia del usuario. Permite realizar acciones como validar formularios, crear animaciones, actualizar contenido en tiempo real, entre otras funciones, sin necesidad de recargar la página.
+
+**Hosting:** Servidor que no da un espacio para subir de forma online nuestra pagina o lo que fuera. Este servidor siempre seria de una proveedor, es decir de una empresa que hace que tu pagina esta subida a la nube y se pueda acceder.
+Tipos de Hosting:
+                 -Hosting Compartido: Es la que en la mayoria de paginas web estan alojadas. Se basa en que en un solo servidor contiene todas las paginas web y recursos. Tambien tienen un panel de control. En este hosting se encarga el proveedor (seguridad, hosting, actualizaciones, ect)
+                 -Hosting VPS: Funciona parecido al compartido, pero en vez de usar un solo servidor y meter todo, se divide en partes de forma independientes, o sea diferentes "servidores". Esto genera que tengan recursos fijos en cada uno, o sea no se interfiere el recurso con otro servidor.
+                 -Hosting Dedicado: Ofrece un servidor completo para un solo sitio web, idealizado para paginas o empresas grandes, con mucha cantidad de recursos.
+                 -Close Hosting: Distribuye toda tu web a travez de varios servidores, generando que sea mas escalable y flexible.
+                 -Hosting Especializado: Se usa en casos especificos, por ejemplo con paginas de WP, Shopify, etc que quieren usar un hosting personalizado a medida.
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -249,6 +257,14 @@ Una opción es agregar steps en las transiciones de esa forma el proceso se gene
 **Animacion:** Cambiar el estado de un elemento en el tiempo. Se pueden ejecutar cuando se quiera o incluso de forma automatica. Se pueden cambiar mas veces las propiedades y ademas se puede reproducir muchas veces.
 Se usa con @keyframes "nombre" y dentro de agrega el from donde estarian las propiedades de cuando inicia y despues el to que son las propiedades cuando termina la animacion.
 Se puede dejar el estado final de forma permanente con la propiedad animation-fillmode.
+Estas animaciones se basan en los segundos que agregemos como tiempo a durar, es decir que si ponemos 3 segundos, se basan en ese tiempo para empezar y terminar.
+Estas animaciones se puede usar tanto en un elemento como en un texto (ejemplos realizados)
+
+Animacion basada en scroll: En este caso las animaciones no se basan en los segundos, sino en el scroll (o sea en el avance del scroll o retroceso) y la otra manera es con el view, en la cual cuando el borde superior del elemento aparece, ahi comienza la animacion y que cuando termina de figurar el elemento, estaria terminando.
+
+Para esto se usa el estilo de: animation-timeline: scroll(). Se puede hacer que tome segun el scroll del body o sino al scroll del elemento padre, para eso es una configuracion similar pero con algunos cambios y definiendo un nombre exacto de scroll.
+
+Ahora para el tipo de animacion de view funciona igual pero con el estilo de: animation-timeline: view()
 
 **Overflow:** Se define como se maneja el contenido si sobresale de su contenedor. Tien 4 valores:
     -visible: se va a ver a pesar de salir del contenido.
